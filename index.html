@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Keeper</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <header class="text-center">
+        <h1>Time Keeper &#x1F551</h1>
+    </header>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form">
+                        <label for="date-worked">Date Worked</label>
+                        <input type="date" class="form-control" id="date-worked">
+                    </div>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form">
+                        <label for="start-time">Start Time</label>
+                        <input type="time" class="form-control" id="start-time">
+                    </div>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form">
+                        <label for="end-time">End Time</label>
+                        <input type="time" class="form-control" id="end-time">
+                    </div>
+                </div>
+            </div> <br>
+            <div>
+                <button id="submit" class="btn btn-secondary form-control">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <table class="table" id="table-items">
+        <tr>
+            <th>Date Worked</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+        </tr>
+    </table>
+
+    <script src="app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
